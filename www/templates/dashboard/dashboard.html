@@ -1,0 +1,17 @@
+<ion-view>
+    <ion-content>
+<div class="bar bar-header bar-assertive">
+    <h1 class="title">Salesman App</h1>
+    <button class="button button-energized" ng-click="signOut()">Sign Out</button>
+    </div><br><br><br>
+<ul class="list">
+    <li class="item" ng-repeat="product in products" ng-click ="sendNotification(product)">
+      <h2>product Name    :  {{product.productName}}</h2>
+      <h2>product Weight  :  {{product.productWeight}}</h2>
+      <h2>product Price   :  {{product.productPrice}}</h2>
+      {{}}
+    </li>
+</ul>
+
+</ion-view>
+</ion-content>
