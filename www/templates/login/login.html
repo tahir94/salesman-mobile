@@ -1,26 +1,22 @@
 <ion-view>
-<ion-content>
-<div class="bar bar-header bar-assertive">
+  <ion-header-bar class="bar bar-header bar-assertive">
     <h1 class="title">Salesman App</h1>
-    <button class="button button-stable" ng-click="signOut()" ng-show="isLoggedIn"  >Sign Out</button>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <form name="form" novalidate>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">User Name</span>
+            <input type="text" ng-required="required" ng-model="saleman.userName">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" ng-required="required" ng-model='saleman.password'>
+          </label>
+          <button class="button button-block button-stable" ng-click="doLogin(saleman)">Login</button>
+        </div>
+      </form>
     </div>
-<br><br><br>
-
-<div class="list">
-  
-   
-   <form name="form"" novalidate>
-   <div class="list">
-  <label class="item item-input">
-    <span class="input-label">User Name</span>
-    <input type="text" ng-required="required" ng-model="saleman.userName">
-  </label>
-<label class="item item-input">
-    <span class="input-label">Password</span>
-    <input type="password" ng-required="required" ng-model='saleman.password'>
-  </label>
-  
-  <button class="button button-stable"  ng-click="doLogin(saleman)">Login</button>
-
-</ion-content>
+  </ion-content>
 </ion-view>
